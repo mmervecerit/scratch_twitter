@@ -6,7 +6,7 @@ import requests
 URL = "https://api.scratch.mit.edu/projects/count/all"
 r = requests.get(url = URL)
 data = r.json()
-numofprojects= data['count'][0]
+numofprojects= data['count']
 twitter = Twython(APP_KEY, APP_SECRET
                   OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
 tweet= 'As of today, '+numofprojects+ 'Scratch projects are shared on Scratch website! Check out Scratch today-> https://scratch.mit.edu/'
